@@ -1,0 +1,19 @@
+{
+  "name": "sgi-melo-diniz",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:web": "npm --workspace @sgi/web run dev",
+    "dev:api": "npm --workspace @sgi/api run dev",
+    "build:web": "npm --workspace @sgi/web run build",
+    "build:api": "npm --workspace @sgi/api run build",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "devDependencies": {
+    "prisma": "^6.7.0",
+    "typescript": "^5.8.3"
+  }
+}
